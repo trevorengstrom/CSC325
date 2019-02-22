@@ -1,10 +1,11 @@
-Injection
-Broken Authentication
-Sensitive data exposure
-XML External Entities (XXE)
-Broken Access control
-Security misconfigurations
-Cross-Site Scripting (XSS)
-Insecure Deserialization
-Using Components with known vulnerabilities
-Insufficient logging and monitoring
+1) Injection
+  o Place code in search/add functions to prevent injection. 
+2) Broken Authentication
+3) Sensitive data exposure
+4) XML External Entities (XXE)
+5) Broken Access control
+6) Security misconfigurations
+7) Cross-Site Scripting (XSS)
+8) Insecure Deserialization
+9) Using Components with known vulnerabilities
+10) Insufficient logging and monitoring
