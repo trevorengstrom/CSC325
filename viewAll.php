@@ -13,14 +13,12 @@ if ($conn->connect_error) {
 }
 //echo "Connected Successfully";
 
-$name=$_POST["searchnametwo"];
-echo "<br> Search results for $name <br>";
-
-//Step2
-$query = "SELECT id, fname, lname, comments, datenow FROM user WHERE fname LIKE '%$name%' OR lname LIKE '%$name%'";
+//Query Database
+$query = "SELECT * FROM user";
 mysqli_query($conn, $query) or die('Error querying database.');
 $result = mysqli_query($conn, $query);
 
+//Show Results
 if ($result->num_rows > 0) {
 	echo "<table border=1  cellspacing=0 cellpading=0>
 	<tr>
@@ -31,7 +29,6 @@ if ($result->num_rows > 0) {
 	</tr>";
 		while($row = $result->fetch_assoc()) {
 			echo "<tr>
-
 			<td> " . $row["id"]. " </td>
 			<td> " . $row["fname"]. " " . $row["lname"]. "</td>
 			<td> " . $row["comments"]. " </td>
@@ -43,6 +40,7 @@ echo "</table>";
 	echo "0 results";
 }
 
+//Close connection
 mysqli_close($conn);
 ?>
 
@@ -53,6 +51,7 @@ mysqli_close($conn);
 <a href="addtodb.php">Add to Database Page</a>
 <br>
 <a href="search.php">Back to search Page</a>
+
 
 </body>
 
