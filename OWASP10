@@ -1,4 +1,4 @@
-1) Injection
+1) Injection (trevor)
   o Place code in search/add functions to prevent injection. 
 2) Broken Authentication
 3) Sensitive data exposure
@@ -8,6 +8,6 @@
 7) Cross-Site Scripting (XSS)
 8) Insecure Deserialization
 9) Using Components with known vulnerabilities
-10) Insufficient logging and monitoring
+10) Insufficient logging and monitoring (trevor)
   o log all errors. 
   o ensure users cannot see any error messages. 
