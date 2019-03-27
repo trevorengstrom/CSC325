@@ -9,3 +9,5 @@
 8) Insecure Deserialization
 9) Using Components with known vulnerabilities
 10) Insufficient logging and monitoring
+  o log all errors. 
+  o ensure users cannot see any error messages. 
