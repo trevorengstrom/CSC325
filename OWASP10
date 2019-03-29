@@ -1,4 +1,4 @@
-1) Injection (trevor)
+1) Injection (trevor) [COMPLETE]
   o Place code in search/add functions to prevent injection. 
 2) Broken Authentication
 3) Sensitive data exposure
@@ -8,6 +8,6 @@
 7) Cross-Site Scripting (XSS)
 8) Insecure Deserialization
 9) Using Components with known vulnerabilities
-10) Insufficient logging and monitoring (trevor)
-  o log all errors. 
-  o ensure users cannot see any error messages. 
+10) Insufficient logging and monitoring (trevor)[COMPLETE]
+  o logged all errors to php.ini file. 
+  o All php/db errors produce just a generic error message to the user. 
