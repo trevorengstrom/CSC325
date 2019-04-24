@@ -1,3 +1,23 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Fonts import -->
+<link href="https://fonts.googleapis.com/css?family=Caveat|Economica|Patrick+Hand|Permanent+Marker|Special+Elite|quicksand|roboto+mono|cabin" rel="stylesheet">
+<!-- Import Google Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Bootstrap -->
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="guestbookCSS.css" type="text/css" rel="stylesheet"/> 
+
+</head>
+<body>
+
+<h2 class="guestbookRoom">Guestbook</h2>
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -44,15 +64,10 @@ echo "</table>";
 mysqli_close($conn);
 ?>
 
-<html>
 
-<body>
 <br>
-<a href="addtodb.php">Add to Database Page</a>
-<br>
-<a href="search.php">Back to search Page</a>
-
-
+<div id="buttonFooter">
+<a href="landing.html">Back to Guestbook</a>
+</div>
 </body>
-
 </html>
